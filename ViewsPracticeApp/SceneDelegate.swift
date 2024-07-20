@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-        let vc = SettingVC()
+        let vc = TravelTalkVC()
         
         //entry point
         window?.rootViewController = UINavigationController(rootViewController: vc)

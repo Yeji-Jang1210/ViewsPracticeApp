@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8BEAFF42C4BF28E00F08B4C /* TalkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BEAFF32C4BF28E00F08B4C /* TalkModel.swift */; };
+		B8BEAFF72C4BF2BD00F08B4C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BEAFF62C4BF2BD00F08B4C /* String+Extension.swift */; };
+		B8BEAFF92C4BF2CB00F08B4C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BEAFF82C4BF2CB00F08B4C /* Date+Extension.swift */; };
+		B8BEAFFB2C4BF31C00F08B4C /* TravelTalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BEAFFA2C4BF31C00F08B4C /* TravelTalkVC.swift */; };
+		B8BEAFFD2C4BF3D400F08B4C /* TravelTalkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BEAFFC2C4BF3D400F08B4C /* TravelTalkCollectionViewCell.swift */; };
+		B8BEAFFF2C4BF55900F08B4C /* TravelTalkVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BEAFFE2C4BF55900F08B4C /* TravelTalkVM.swift */; };
 		B8E74D942C4A2C8C006D718F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E74D932C4A2C8C006D718F /* AppDelegate.swift */; };
 		B8E74D962C4A2C8C006D718F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E74D952C4A2C8C006D718F /* SceneDelegate.swift */; };
 		B8E74D9D2C4A2C8E006D718F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E74D9C2C4A2C8E006D718F /* Assets.xcassets */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8BEAFF32C4BF28E00F08B4C /* TalkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkModel.swift; sourceTree = "<group>"; };
+		B8BEAFF62C4BF2BD00F08B4C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B8BEAFF82C4BF2CB00F08B4C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		B8BEAFFA2C4BF31C00F08B4C /* TravelTalkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkVC.swift; sourceTree = "<group>"; };
+		B8BEAFFC2C4BF3D400F08B4C /* TravelTalkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkCollectionViewCell.swift; sourceTree = "<group>"; };
+		B8BEAFFE2C4BF55900F08B4C /* TravelTalkVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkVM.swift; sourceTree = "<group>"; };
 		B8E74D902C4A2C8C006D718F /* ViewsPracticeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewsPracticeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E74D932C4A2C8C006D718F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E74D952C4A2C8C006D718F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8BEAFF22C4BF28600F08B4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8BEAFF32C4BF28E00F08B4C /* TalkModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8BEAFF52C4BF2AB00F08B4C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8BEAFF62C4BF2BD00F08B4C /* String+Extension.swift */,
+				B8BEAFF82C4BF2CB00F08B4C /* Date+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B8E74D872C4A2C8C006D718F = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +90,7 @@
 		B8E74D922C4A2C8C006D718F /* ViewsPracticeApp */ = {
 			isa = PBXGroup;
 			children = (
+				B8BEAFF52C4BF2AB00F08B4C /* Extension */,
 				B8E74DA82C4A2CBC006D718F /* Talk */,
 				B8E74DA72C4A2C96006D718F /* Setting */,
 				B8E74D932C4A2C8C006D718F /* AppDelegate.swift */,
@@ -84,6 +114,10 @@
 		B8E74DA82C4A2CBC006D718F /* Talk */ = {
 			isa = PBXGroup;
 			children = (
+				B8BEAFF22C4BF28600F08B4C /* Model */,
+				B8BEAFFA2C4BF31C00F08B4C /* TravelTalkVC.swift */,
+				B8BEAFFE2C4BF55900F08B4C /* TravelTalkVM.swift */,
+				B8BEAFFC2C4BF3D400F08B4C /* TravelTalkCollectionViewCell.swift */,
 			);
 			path = Talk;
 			sourceTree = "<group>";
@@ -165,9 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BEAFFD2C4BF3D400F08B4C /* TravelTalkCollectionViewCell.swift in Sources */,
+				B8BEAFFB2C4BF31C00F08B4C /* TravelTalkVC.swift in Sources */,
 				B8E74DB12C4A498B006D718F /* SettingHeaderView.swift in Sources */,
+				B8BEAFF42C4BF28E00F08B4C /* TalkModel.swift in Sources */,
 				B8E74D942C4A2C8C006D718F /* AppDelegate.swift in Sources */,
 				B8E74DAA2C4A2D3F006D718F /* SettingVC.swift in Sources */,
+				B8BEAFFF2C4BF55900F08B4C /* TravelTalkVM.swift in Sources */,
+				B8BEAFF92C4BF2CB00F08B4C /* Date+Extension.swift in Sources */,
+				B8BEAFF72C4BF2BD00F08B4C /* String+Extension.swift in Sources */,
 				B8E74D962C4A2C8C006D718F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
