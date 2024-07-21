@@ -35,6 +35,11 @@ final class TravelTalkVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
+        let gesture = UITapGestureRecognizer()
+        gesture.addTarget(self, action: #selector(viewTapped))
+        view.addGestureRecognizer(gesture)
+        
         configureHierarchy()
         configureLayout()
         configureUI()
@@ -103,5 +108,9 @@ final class TravelTalkVC: UIViewController {
         snapshot.appendItems(mockChatList, toSection: .all)
         dataSource.apply(snapshot, animatingDifferences: true)
     }
+    
+    @objc func viewTapped(){
+        print(#function)
+        navigationItem.searchController?.searchBar.endEditing(true)
+    }
 }
-
